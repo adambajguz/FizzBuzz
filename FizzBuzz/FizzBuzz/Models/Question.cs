@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Text;
 
 namespace FizzBuzz.Models
 {
@@ -11,7 +9,29 @@ namespace FizzBuzz.Models
 
         public QuestionAnswer GetAnswer()
         {
-            return new QuestionAnswerValid("44");
+            if (Number < 1 || Number > 100)
+                throw new InvalidQuestionNumberException("Invalid number! Number should be from 1 to 100.");
+
+            StringBuilder stringBuilder = new StringBuilder();
+
+            if (Number % 3 == 0)
+                stringBuilder.Append("fizz");
+
+            if (Number % 5 == 0)
+                stringBuilder.Append("buzz");
+
+            if (stringBuilder.Length == 0)
+                return new QuestionAnswer(Number.ToString());
+
+            return new QuestionAnswer(stringBuilder.ToString());
+        }
+    }
+
+    class InvalidQuestionNumberException : Exception
+    {
+        public InvalidQuestionNumberException(string error) : base(error)
+        {
+
         }
     }
 }

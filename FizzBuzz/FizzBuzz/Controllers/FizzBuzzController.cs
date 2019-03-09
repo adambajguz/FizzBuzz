@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using FizzBuzz.Models;
+﻿using FizzBuzz.Models;
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
 
 namespace FizzBuzz.Controllers
 {
@@ -17,8 +12,15 @@ namespace FizzBuzz.Controllers
         [HttpPost]
         public ActionResult<QuestionAnswer> Post(Question question)
         {
-            return BadRequest(question.GetAnswer());
-            return question.GetAnswer();
+            try
+            {
+                return question.GetAnswer();
+            }
+            catch (InvalidQuestionNumberException ex)
+            {
+                return BadRequest(new { error = ex.Message });
+
+            }
         }
     }
 }
