@@ -17,6 +17,7 @@ namespace FizzBuzz.Controllers
         [HttpPost]
         public ActionResult<QuestionAnswer> Post(Question question)
         {
+            return BadRequest(question.GetAnswer());
             return question.GetAnswer();
         }
     }
