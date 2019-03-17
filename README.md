@@ -1,3 +1,7 @@
+# FizzBuzz Adam Bajguz
+
+
+
 # Zadanie FizzBuzz - część 1
 
 Zrealizuj jeden z podanych wariantów aplikacji webowej FizzBuzz.
@@ -82,3 +86,24 @@ Ostateczna wersja projektu powinna zostać opublikowana w systemie CEZ.
 * użycie git-a - 2pkt (1 pkt za systematyczne dodanie zmian z każdych zajęć)
 * *Punkty nie zostaną przyznane w przypadku stwierdzenia braku samodzielności w realizacji projektu.*
 * *W przypadku opóźnienia w realizacji zadania liczba punktów zmniejsza się o połowę za każdy tydzień opóźnienia.*
+
+
+# Zmodyfikuj kod z poprzednich zajęć o przypadek "wizz".
+
+Po wpisaniu liczby i wciśnięciu 'Odpowiedz' użytkownik otrzymuje odpowiedź
+
+* "wizz" jeśli dana liczba jest podzielna przez 7
+* "fizzwizz" jeśli dana liczba jest podzielna przez 3 i 7
+* "buzzwizz" jeśli dana liczba jest podzielna przez 5 i 7
+* "fizzbuzzwizz" jeśli dana liczba jest podzielna przez 3, 5 i 7
+Zrealizuj podane zadanie w sposób umożliwiający prostą rozbudowę programu o kolejne przypadki.
+
+Każde wyszukiwanie oraz odpowiedź serwera powinna być rejestrowane w bazie danych wraz z IP, z którego zostało wysłane zapytanie.
+
+(Podpowiedź: użyj HTTP_X_FORWARDED_FOR  i REMOTE_ADDR zapisanych w obiekcie Request).
+
+W projekcie umieść plik README z imieniem i nazwiskiem autora rozwiązania oraz linkiem do repozytorium.
+
+Rozwiązanie umieść w repozytorium kodu i udostępnij prowadzącemu do odczytu (istolarska).
+
+Rozwiązanie umieść w systemie CEZ.
