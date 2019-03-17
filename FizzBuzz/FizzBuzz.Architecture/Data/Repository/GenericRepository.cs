@@ -33,8 +33,9 @@ namespace FizzBuzz.Data.Repository
 
         public void Create(TEntity entity)
         {
-            entity.Created = DateTime.UtcNow;
-            entity.Modified = DateTime.UtcNow;
+            DateTime date = DateTime.UtcNow;
+            entity.Created = date;
+            entity.Modified = date;
             dbSet.Add(entity);
         }
 
