@@ -1,0 +1,337 @@
+{
+	"info": {
+		"_postman_id": "7a90bae8-ee44-42ed-bae0-a356b38e62fe",
+		"name": "FizzBuzz",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "test",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "a7f18634-1c49-4507-8f16-ec42c0a2a7b4",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "614765e5-1e39-4be7-aa9b-97cdb1e9fd6e",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"number\": 105\n}"
+				},
+				"url": {
+					"raw": "http://localhost:50177/api/fizzbuzz",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50177",
+					"path": [
+						"api",
+						"fizzbuzz"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test Copy",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "a7f18634-1c49-4507-8f16-ec42c0a2a7b4",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "614765e5-1e39-4be7-aa9b-97cdb1e9fd6e",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"number\": 4\n}"
+				},
+				"url": {
+					"raw": "http://localhost:50177/api/fizzbuzz",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50177",
+					"path": [
+						"api",
+						"fizzbuzz"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetHistory",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "a7f18634-1c49-4507-8f16-ec42c0a2a7b4",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "614765e5-1e39-4be7-aa9b-97cdb1e9fd6e",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:50177/api/fizzbuzzhistory/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50177",
+					"path": [
+						"api",
+						"fizzbuzzhistory",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetWithId",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "a7f18634-1c49-4507-8f16-ec42c0a2a7b4",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "614765e5-1e39-4be7-aa9b-97cdb1e9fd6e",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:50177/api/fizzbuzzhistory/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50177",
+					"path": [
+						"api",
+						"fizzbuzzhistory",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteWithId",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "a7f18634-1c49-4507-8f16-ec42c0a2a7b4",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "614765e5-1e39-4be7-aa9b-97cdb1e9fd6e",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:50177/api/fizzbuzzhistory/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50177",
+					"path": [
+						"api",
+						"fizzbuzzhistory",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteAll",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "a7f18634-1c49-4507-8f16-ec42c0a2a7b4",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "614765e5-1e39-4be7-aa9b-97cdb1e9fd6e",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:50177/api/fizzbuzzhistory/deleteall",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50177",
+					"path": [
+						"api",
+						"fizzbuzzhistory",
+						"deleteall"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
